@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   end
   resources :pantry_days 
   resources :appointments
-  root to: 'application#home'
+  root to: 'clients#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

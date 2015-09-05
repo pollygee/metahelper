@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+
+  body
+    h1 Client Database
+    table
+      thead
+        th First Name
+        th Last Name
+        th Address
+        th Zip
+        th Phone Number
+        th County
+        th Family Size
+        th Account Number
+        th email
+        th Active?
+      tbody
+        - @clients.each do |client|
+          tr
+            td.first_name = client.first_name
+            td.last_name = client.last_name
+            td.address = client.address
+            td.zip = client.zip
+            td.phone = client.display_phone
+            td.county = client.county
+            td.size = client.family_size
+            td.account = client.account_number
+            td.email = client.email
+            td.active = client.active_client
+      

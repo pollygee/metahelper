@@ -17,6 +17,7 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'elasticsearch-rails'
 gem 'elasticsearch-model'
 gem 'sidekiq'
+gem 'slim'
 
 group :development, :test do
   gem 'spring'
